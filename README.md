@@ -26,6 +26,8 @@ pip install image-knocker
 foo@bar:~$ image-knocker --path dataset_path/ --exts png jpg jpeg
 ```
 
+## Example
+
 if `corrupted image` in `dataset`:
 
 ![image](https://user-images.githubusercontent.com/35001605/132241444-fffa8eda-cccd-44e6-9f43-5943c4ae2614.png)
