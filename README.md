@@ -12,7 +12,7 @@ When I checked the trainning process at Monday after arriving at work, the progr
 
 I developed this project to check images that cannot be opened by image processing libraries before running computer vision applications.
 
-`image-knocker` is very fast!
+`image-knocker` is very fast and simple!
 
 # Install
 
