@@ -33,7 +33,7 @@ def main():
     
     assert os.path.isdir(args.path)
     
-    print(bcolors.OKGREEN + f"Knocking... Root Path: {os.path.abspath(args.output_path)}" + bcolors.ENDC)
+    print(bcolors.OKGREEN + f"Knocking... Root Path: {os.path.abspath(args.path)}" + bcolors.ENDC)
     
     corrupted_imgs = search_corrputed_imgs(path=args.path,
                                            exts=args.exts)
