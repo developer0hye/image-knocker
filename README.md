@@ -30,11 +30,9 @@ foo@bar:~$ image-knocker --path dataset_path/ --exts png jpg jpeg
 
 if `corrupted image` in `dataset`:
 
-![image](https://user-images.githubusercontent.com/35001605/132241444-fffa8eda-cccd-44e6-9f43-5943c4ae2614.png)
+![image](https://user-images.githubusercontent.com/35001605/132242991-8d510cdb-9025-43d5-9082-daae0a039b1e.png)
 
 else:
 
-![image](https://user-images.githubusercontent.com/35001605/132238630-39fcd964-1603-4c71-9e38-f0643ea04817.png)
-
-
+![image](https://user-images.githubusercontent.com/35001605/132242884-4ef6d03b-e7e2-44e4-9761-ee9150084103.png)
 
