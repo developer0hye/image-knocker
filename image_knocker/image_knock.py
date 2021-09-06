@@ -1,14 +1,13 @@
-import cv2
+from PIL import Image
 import tqdm
 from itertools import compress
 import os
 import multiprocessing
 
-import ray
- 
 def is_corrupted_img(file):
     try:
-        img = cv2.imread(file)
+        img = Image.open(file)
+        img.verify()
         return img is None
     except:
         return True
@@ -34,15 +33,10 @@ def search_corrputed_imgs(path,
                           ):
     exts = tuple(exts)
     imgs = read_files(path, exts)
-    
-    
     corrupted_imgs = []
     if len(imgs) > 0:
-        ray.init()
         with multiprocessing.Pool() as p:
             is_corrupted = list(tqdm.tqdm(p.imap(is_corrupted_img, imgs), total=len(imgs)))
-            corrputed_imgs = list(compress(imgs, is_corrupted))
-        ray.shutdown()
-        
-    return corrputed_imgs
+            corrupted_imgs = list(compress(imgs, is_corrupted))
+    return corrupted_imgs
         

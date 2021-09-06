@@ -1,6 +1,6 @@
 import os
 import argparse
-import image_knock
+from .image_knock import search_corrputed_imgs
 
 class bcolors:
     HEADER = '\033[95m'
@@ -33,11 +33,13 @@ def main():
     
     assert os.path.isdir(args.path)
     
-    corrupted_imgs = image_knock.search_corrputed_imgs(path=args.path,
-                                                       exts=args.exts)
+    print(bcolors.OKGREEN + f"Knocking... Root Path: {os.path.abspath(args.output_path)}" + bcolors.ENDC)
     
+    corrupted_imgs = search_corrputed_imgs(path=args.path,
+                                           exts=args.exts)
+  
     if len(corrupted_imgs) == 0:
-        print(bcolors.OKGREEN + "There are no corrupted image files! All images were loaded successfully using cv2.imread!" + bcolors.ENDC)
+        print(bcolors.OKGREEN + "There are no corrupted image files! All images were loaded successfully using PIL.Image.open!" + bcolors.ENDC)
     else:
         corrupted_imgs = "\n".join(corrupted_imgs)
         
