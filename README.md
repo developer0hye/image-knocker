@@ -26,13 +26,18 @@ pip install image-knocker
 foo@bar:~$ image-knocker --path dataset_path/ --exts png jpg jpeg
 ```
 
-## Example
+## Output
 
-if `corrupted image` in `dataset`:
-
-![image](https://user-images.githubusercontent.com/35001605/132242991-8d510cdb-9025-43d5-9082-daae0a039b1e.png)
-
+```python
+if corrupted image in dataset:
+  Knocking... Root Path: D:\datasets\detection\VOCdevkit
+  100%|██████████████████| 34179/34179 [00:03<00:00, 10911.31it/s]
+  Corrupted image files are detected!
+  D:/datasets/detection/VOCdevkit/outlier.png
+  Corrupted image file list is saved to D:\datasets\detection\corrupted_imgs_list.txt
 else:
-
-![image](https://user-images.githubusercontent.com/35001605/132242884-4ef6d03b-e7e2-44e4-9761-ee9150084103.png)
-
+  Knocking... Root Path: D:\datasets\detection\VOCdevkit
+  100%|██████████████████| 34178/34178 [00:04<00:00, 7792.30it/s]
+  There are no corrupted image files! 
+  All images were loaded successfully using PIL.Image.open!
+```
