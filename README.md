@@ -4,7 +4,7 @@ Knock your images before these make you painful.
 
 # Background
 
-One day, I had runned my deep learning model training program and got off work at Friday.
+One day, I had run my deep learning model training program and got off work at Friday.
 
 When I checked the trainning process at Monday after arriving at work, the program was terminated because of some images that cannot be opened by image processing libraries like PIL.
 
