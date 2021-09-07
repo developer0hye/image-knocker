@@ -4,11 +4,7 @@ Knock your images before these make you painful.
 
 # Background
 
-One day, I had run my deep learning model training program and got off work at Friday.
-
-When I checked the trainning process at Monday after arriving at work, the program was terminated because of some images that cannot be opened by image processing libraries like PIL.
-
-![img](https://user-images.githubusercontent.com/35001605/132240388-d54b710f-4d87-461c-855e-cbab155a3a4c.png)
+One day, I had run my deep learning model training program and got off work at Friday. When I checked the trainning process at Monday after arriving at work, the program was terminated because of some images that cannot be opened by image processing libraries like PIL.
 
 I developed this project to check images that cannot be opened by image processing libraries before running computer vision applications.
 
