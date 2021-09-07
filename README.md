@@ -28,14 +28,17 @@ foo@bar:~$ image-knocker --path dataset_path/ --exts png jpg jpeg
 
 ## Output
 
-```python
-if corrupted image in dataset:
+
+### if `corrupted image` in `dataset`:
+```
   Knocking... Root Path: D:\datasets\detection\VOCdevkit
   100%|██████████████████| 34179/34179 [00:03<00:00, 10911.31it/s]
   Corrupted image files are detected!
   D:/datasets/detection/VOCdevkit/outlier.png
   Corrupted image file list is saved to D:\datasets\detection\corrupted_imgs_list.txt
-else:
+```
+### else:
+```
   Knocking... Root Path: D:\datasets\detection\VOCdevkit
   100%|██████████████████| 34178/34178 [00:04<00:00, 7792.30it/s]
   There are no corrupted image files! 
