@@ -1,6 +1,6 @@
 # image-knocker
 
-Knock your images before these make you painful.
+Knock your images before you get stressed.
 
 ## Background
 
